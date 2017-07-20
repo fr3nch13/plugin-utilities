@@ -1,0 +1,74 @@
+.nihfo-object-tabs {
+	padding-top:20px;
+}
+
+/**** NEW tabs with the nihfo.object.tabs widget controlling them ****/
+
+/** Tabs **/
+.nihfo-object-tabs nav.tabs {
+	border-bottom: 1px solid #ACACAC; 
+}
+.nihfo-object-tabs nav.tabs a.tab {
+	display: inline-block;
+	font-size: 0.9em;
+	border-bottom-width: 0px;
+}
+.nihfo-object-tabs nav.tabs a.tab.active {
+	background-color: #FFF; 
+}
+
+/** Panels **/
+.nihfo-object-tabs div.panels {
+	position: relative;
+}
+.nihfo-object-tabs div.panels section.panel {
+	display: block;
+	min-height: 300px;
+}
+.nihfo-object-tabs div.panels section.panel[aria-hidden="false"] {
+}
+.nihfo-object-tabs div.panels section.panel[aria-hidden="true"],
+.nihfo-object-tabs div.panels section.panel.hidden {
+	display: none;
+}
+.nihfo-object-tabs div.panels div.panel-loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	background: rgba(218, 218, 218, 0.5);
+	padding: 30px;
+	text-align: center;
+	vertical-align: middle;
+	display: none;
+}
+.nihfo-object-tabs div.panels div.panel-loading i {
+  position: relative;
+  top: 30%;
+  bottom: 30%;
+  font-size: 4em;
+}
+
+/**** OLD tabs with jquery ui tabs ****/
+.nihfo-object-tabs .tab-list .tab .tab-stats .tab-stat .tab-stat-name {
+	display: none;
+} 
+.nihfo-object-tabs > ul {
+	padding-left: 5px;
+	border-bottom: 1px solid #ACACAC; 
+	background-color: #FFF; 
+	font-size: 0.9em;
+}
+.nihfo-object-tabs div.top {
+	padding: 5px 0px;
+	border-bottom: 1px solid #FFF;
+}
+.nihfo-object-tabs div.top .page-header h1 {
+	display:none;
+}
+
+.nihfo-object-tabs .ui-tabs-panel {
+	min-height: 300px;
+}

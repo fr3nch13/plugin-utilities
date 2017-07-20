@@ -1,0 +1,56 @@
+{
+	"name" : "nih-fo/plugin-utilities",
+	"description" : "CakePHP Plugin: General utilities for the portals",
+	"type" : "cakephp-plugin",
+	"keywords" : ["cakephp", "plugin", "legacy", "framework"],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Brian French",
+			"role": "Developer"
+		},
+		{
+			"name": "Joshua Knust",
+			"role": "Manager"
+		} 
+	],
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+	"require": {
+		"php": ">=5.5",
+		"composer/installers": "*",
+		"cakephp/cakephp": "2.*",
+		"phpunit/phpunit": "3.7.*",
+		"cakephp/debug_kit" : "2.2.*",
+		"components/jquery": "1.11.*",
+		"components/jqueryui": "1.*",
+		"components/qunit": "1.11.*",
+		"nih-fo/plugin-cakephp-queue": "2.*",
+		"nih-fo/plugin-contacts": "1.*",
+		"nih-fo/plugin-dblogger": "1.*",
+		"nih-fo/plugin-docs": "1.*",
+		"nih-fo/plugin-filter": "1.*",
+		"nih-fo/plugin-OAuthClient": "1.*",
+		"nih-fo/plugin-php-pdf": "1.*",
+		"nih-fo/plugin-search": "1.*",
+		"nih-fo/plugin-ssdeep": "1.*",
+		"nih-fo/plugin-tags": "1.*",
+		"nih-fo/plugin-upload": "1.*",
+		"nih-fo/plugin-usage": "1.*",
+		"nih-fo/plugin-snapshot": "1.*",
+		"nih-fo/vendor-/bootstrap-markdown" : "*",
+		"nih-fo/vendor-/bower-chosen" : "1.*",
+		"nih-fo/vendor-/dragtable" : "*",
+		"nih-fo/vendor-/handsontable" : "*",
+		"nih-fo/vendor-/jQuery-Autocomplete" : "*",
+		"nih-fo/vendor-/jQuery-Timepicker-Addon" : "*",
+		"nih-fo/vendor-/js-cookie" : "*",
+		"nih-fo/vendor-/php-oauth2-client": "*",
+		"nih-fo/vendor-/qTip2" : "*",
+		"nih-fo/vendor-/searchabledropdown" : "*",
+		"nih-fo/vendor-/shapeshift" : "*",
+		"nih-fo/vendor-/simplehtmldom" : "*",
+		"FortAwesome/Font-Awesome" : "*",
+		"rmm5t/jquery-timeago": "*"
+	}
+}

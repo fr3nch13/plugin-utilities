@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.nihfo-object {
+}
+
+.nihfo-object .site-data > * {
+	vertical-align: top;
+}
+.nihfo-object .site-data .ajax-times,
+.nihfo-object .site-data .ajax-counts,
+.nihfo-object .site-data .proctime_results,
+.nihfo-object .site-data .version-info {
+	display: inline-block;
+	padding: 10px;
+}
+
+/* by default, hide cache times */
+.nihfo-object div.cachetime {
+	display: block;
+}
+
+/* should only exist just inside the main top object, and just be one */
+.nihfo-object .nihfo-object-top-progressbar {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1005;
+	background-color: #EFEFFF;
+	border-bottom: 1px solid #99F;
+	height: 5px;
+}
+.nihfo-object .nihfo-object-top-progressbar .nihfo-object-top-progressbar-label {
+	display: inline-block;
+	float: right;
+	font-size: 0.8em;
+	height: 8px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff;
+	display: none;
+}
+.nihfo-object .nihfo-object-top-progressbar .ui-progressbar-value {
+	position: relative;
+	top: 0;
+	background-color: #99F;
+	height: 5px;
+	margin: 0px;
+}

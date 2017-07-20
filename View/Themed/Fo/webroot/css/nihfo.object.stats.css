@@ -1,0 +1,40 @@
+/*** Stats for an Object ***/
+.object-stats {
+	display: inline-block;
+}
+
+.object-stats ul {
+	display: inline-block;
+}
+
+.object-stats li {
+	float: left;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.object-stats li span.value {
+    display: block;
+    font-size: 240%;
+    font-weight: 100;
+    color: #666;
+    color: #444;
+    text-shadow: -0.5px -0.5px 0px #333, 0.5px -0.5px 0px #333, -0.5px 0.5px 0px #333, 0.5px 0.5px 0px #333;
+}
+
+.object-stats li span.value a {
+    color: inherit;
+}
+.object-stats li span.value a[data-color-border] {
+	font-weight: 100;
+}
+
+.object-stats li span.name {
+    color: #AAA;
+    display: block;
+    font-size: 0.8em;
+}
+
+.object-stats li a:hover {
+	color:#72A8D6;
+}

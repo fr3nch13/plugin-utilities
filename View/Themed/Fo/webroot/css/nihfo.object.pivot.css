@@ -1,0 +1,41 @@
+.nihfo-object-pivot {
+	padding-top:20px;
+}
+
+
+.nihfo-object-pivot ul {
+	margin-left: 1.5em;
+}
+.nihfo-object-pivot li {
+	margin-top: 0.8em;
+}
+
+.nihfo-object-pivot .pivot-title {
+	font-size: 160%;
+	font-weight: bold;
+}
+
+.nihfo-object-pivot .pivot-name::before {
+	content:'(';
+}
+
+.nihfo-object-pivot .pivot-name::after {
+	content:') ';
+}
+
+.nihfo-object-pivot .level-0 {
+	font-size: 130%;
+	font-weight: bold;
+}
+
+.nihfo-object-pivot .level-1 {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.nihfo-object-pivot .jOrgChart {
+	width: 100%;
+}
+.nihfo-object-pivot .jOrgChart .pivot-desc {
+	display: none;
+}

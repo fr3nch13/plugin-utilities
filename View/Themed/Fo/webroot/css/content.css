@@ -1,0 +1,120 @@
+/*** Controls the main content of the page (in #body div.center) ***/
+
+.left {
+	float: left;
+	width: 48%;
+}
+.right {
+	float: right;
+	width: 48%;
+}
+
+@media only screen and (max-width: 360px) {
+	.left {
+		clear: both;
+		width: 95%;
+	}
+	.right {
+		clear: both;
+		width: 95%;
+	}
+}
+
+/*** Same as above, but a 3 column layout ***/
+
+.center .middle_3 {
+	float: left;
+	width: 32%;
+}
+
+.center .left_3 {
+	float: left;
+	width: 32%;
+}
+
+.center .right_3 {
+	float: left;
+	width: 32%;
+}
+
+/*** Section titles ***/
+.center h3 {
+	color: #888;
+	font-size: 120%;
+}
+/*** Details of an Object ***/
+#body .center .details dl {
+	line-height: 1.9em;
+	margin: 0em 1em 0em 0em;
+}
+/*
+#body .center dl dd:nth-child(4n+2),
+#body .center dl dt:nth-child(4n+1) {
+	background: #f4f4f4;
+}
+#body .center .details dl {
+	white-space: pre-line;
+}
+*/
+
+#body .center .details dt {
+	float: left;
+    clear: left;
+	margin-right: 4px;
+	min-width: 16em;
+	font-weight: bold;
+	color: #999;
+	border-bottom: 1px dashed #EEE;
+	white-space: nowrap;
+}
+#body .center .details dd {
+	padding-left: 4px;
+	margin-left: 16.3em;
+	margin-right: 4px;
+	border-bottom: 1px dashed #EEE;
+	white-space: nowrap;
+}
+
+/*** Blocks ***/
+
+.block {
+	/*float: left;*/
+	padding: 10px;
+	margin: 0 25px 25px 0;
+	min-width: 140px;
+	border: 1px solid #CACACA;
+	border-radius: 4px;
+    box-shadow: 0 2px 3px #DDD;
+}
+
+.block .block_title {
+	font-weight: bold;
+	font-size: 120%;
+	padding-bottom: 5px;
+}
+
+.block .block_items {
+}
+
+.block .block_items li {
+    list-style-type: none;
+    padding: 0 0 3px 3px;
+}
+
+/* override the settings from the default css for jquery-ui */
+.tabs .ui-widget { }
+
+.tabs .ui-widget-content {
+}
+.tabs .ui-widget-header {
+}
+
+div.like_pre {
+	font-family: monospace;
+	white-space: nowrap;
+}
+div.like_pre a {
+	font-family: monospace;
+	white-space: nowrap;
+	font-weight: bold;
+}

@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/**
+ * 
+ * Basic Color themes:
+ * primary background color: #425995
+ * text color: #444
+ * body background color: #E8E7E3
+ */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/** General Style Info **/
+body {
+	background: url("/img/body-bkgnd.jpg") no-repeat scroll center top #E8E7E3;
+	color: #444;
+	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+	font-size:12px;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+/*** Main Layout ***/
+
+#container {
+	margin: 0 auto;
+    position: relative;
+    text-align: left;
+    width: 944px;
+}
+
+#header {
+	padding: 7px 20px;
+}
+
+#footer {
+	background: url("/img/footer-bkgnd.jpg") no-repeat scroll center bottom #FFF;
+	min-height:56px;
+}
+
+/*** Main search ***/
+#main_search {
+	position: absolute;
+	top: 60px;
+	right: 30px;
+}
+
+/*** User Login/Logout Menu ***/
+
+#menu_user ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 8px;
+}
+
+#menu_user li {
+    background: none repeat scroll 0 0 transparent;
+    border-right: 1px solid #CCCCCC;
+    display: inline;
+    margin: 0;
+    padding: 0 0.8em 0 0.4em;
+}
+
+#menu_user li:last-child {
+    border-right: medium none;
+    padding-right: 0;
+}
+
+/*** Main Menu at the top ***/
+
+#menu_main {
+	display:block;
+	padding-top: 86px;
+	padding-bottom: 27px;
+	border-bottom: 1px solid #E8E7E3;
+	font-size: 120%;
+}
+
+#menu_main ul {
+    list-style-type: none;
+    right: 0;
+}
+
+#menu_main li {
+    background: none repeat scroll 0 0 transparent;
+/*
+    border-top: 1px solid #B8B8B8;
+    border-left: 1px solid #B8B8B8;
+	border-bottom: 1px solid #B8B8B8;
+*/
+    display: inline;
+}
+
+#menu_main li a {
+	background: #FFF;
+    padding: 12px 5px 9px 5px;
+    color:#666;
+}
+#menu_main li a:hover {
+	background: #E8E7E3;
+	text-decoration: none;
+    color:#444;
+}
+
+#menu_main li:last-child {
+/*
+    border-right: 1px solid #B8B8B8;
+*/
+}
+
+/*** Regular Users Menu ***/
+#menu_regular {
+	float: left;
+}
+
+
+/*** Admin Users Menu ***/
+#menu_admin {
+	float: right;
+}
+
+
+/*** The Main Content Section ***/
+#content {
+	background: #FFF;
+	min-height:500px;
+}

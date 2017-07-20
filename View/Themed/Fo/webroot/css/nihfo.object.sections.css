@@ -1,0 +1,19 @@
+.nihfo-object-sections {
+}
+
+.nihfo-object-sections .sections-section {
+	border-bottom: 1px solid #bbb;
+	margin-bottom: 10px;
+}
+.nihfo-object-sections .sections-section h4 {
+	display: block;
+	font-size: 1.2em;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 5px;
+}
+.nihfo-object-sections .sections-section .proctime_results {
+	display: none;
+}
+.nihfo-object-sections .sections-section .chart-line-options {
+	padding-bottom: 10px;
+}

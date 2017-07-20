@@ -1,0 +1,259 @@
+.nihfo-object-dashboard {
+}
+.nihfo-object-dashboard .dashboard-options {
+padding-bottom: 5px;
+}
+.nihfo-object-dashboard .dashboard-options .dashboard-options-content {
+
+}
+.nihfo-object-dashboard .dashboard-options .dashboard-options-content > div {
+	display: inline-block;
+}
+.nihfo-object-dashboard .dashboard-options .dashboard-options-content .dashboard-block-toggler {
+}
+.nihfo-object-dashboard .dashboard-options .dashboard-options-content .dashboard-block-toggler select.collapsed,
+.nihfo-object-dashboard .dashboard-block-content .dashboard-chart-line-options select.collapsed {
+	background-color: #F6FFB7;
+}
+.nihfo-object-dashboard .dashboard-options .dashboard-options-content .dashboard-block-toggler select.collapsed option.collapsed,
+.nihfo-object-dashboard .dashboard-block-content .dashboard-chart-line-options select.collapsed  option.collapsed {
+	font-weight: bold;
+}
+.nihfo-object-dashboard .dashboard-blocks-wrapper {
+	overflow: hidden;
+}
+.nihfo-object-dashboard .dashboard-blocks {
+	position: relative;
+	list-style: outside none none;
+	margin:0;
+	padding:0;
+	min-height: 100px;
+	width: 100%;
+}
+
+/** 
+ * Required to be like this for the salvattore stuff 
+ * More info at http://salvattore.com
+ **/
+/*
+.dashboard-blocks[data-columns]::before {
+	content: '3 .dashboard-column.size-1of3';
+}
+@media screen and (max-width: 813px) {
+	.dashboard-blocks[data-columns]::before {
+		content: '1 .dashboard-column';
+	}
+}
+@media screen and (min-width: 814px) and (max-width: 1215px) {
+	.dashboard-blocks[data-columns]::before {
+		content: '2 .dashboard-column.size-1of2';
+	}
+}
+@media screen and (min-width: 1216px) {
+	.dashboard-blocks[data-columns]::before {
+		content: '3 .dashboard-column.size-1of3';
+	}
+}
+.nihfo-object-dashboard .dashboard-column {
+    min-height: 100px;
+    padding-bottom: 999px;
+    margin-bottom: -999px;
+}
+@media screen and (min-width: 814px) {
+	.nihfo-object-dashboard .dashboard-column {
+	    float: left;
+	}
+}
+.nihfo-object-dashboard .size-1of4 {
+    width: 25%;
+}
+.nihfo-object-dashboard .size-1of3 {
+    width: 33.333%;
+}
+.nihfo-object-dashboard .size-1of2 {
+    width: 50%;
+}
+*/
+
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block {
+	position: absolute;
+	background-color: #FFF;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	box-shadow: 0px 1px 2px #DDD;
+	min-height: 100px;
+	width: 32%;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .debugging {
+	display: none;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block div.cachetime {
+	/* the defaults are in nihfo.object.base.css */
+	text-align: right;
+	font-size: .8em;
+	margin: 3px;
+}
+.nihfo-object-dashboard .dashboard-blocks .ss-placeholder-child {
+	position: absolute;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	box-shadow: 0px 1px 2px #DDD;
+	background: rgba(218, 218, 218, 0.5);
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	background: rgba(218, 218, 218, 0.5);
+	padding: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-loading i {
+  position: relative;
+  top: 30%;
+  bottom: 30%;
+  font-size: 4em;
+}
+
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-header {
+	padding: 5px;
+	background-color: #EDEDED;
+	border-bottom: 1px solid #bfbfbf;
+	border-radius: 4px 4px 0px 0px;
+	box-shadow: 0px 1px 2px #DDD;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px #FFF;
+	height: 1em;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-header a {
+	color: inherit;
+	text-decoration: none;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-header a:hover {
+	color: #294280;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-title {
+	float: left;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-options {
+	float: right;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-options .bookmarker {
+	display: none;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-options .sort-handle {
+	cursor: move;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-options .button-show,
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-options .button-hide {
+	display: none;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content-options {
+	padding-bottom: 4px;
+	padding-top: 3px;
+	float: right;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content-options .page_options {
+	float: right;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content-options .page_options span a {
+	border-top-width: 0px !important;
+	box-shadow: 0px 1px 2px #DDD;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-subtitle {
+	clear: both;
+	padding: 4px 10px;
+	font-size: 110%;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-description {
+	display: none;
+	padding: 5px;
+	border-bottom: 1px solid #BFBFBF;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content {
+	padding: 5px;
+	background-color: #FFF;
+	border-radius: 0px 0px 4px 4px;
+	clear: both;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats {}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat {
+	padding: 3px;
+	border-bottom: 1px solid #EDEDED;
+	line-height: 1.1em;
+	clear: both;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat:last-child {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat.highlighted {
+    color: #FFF;
+    text-shadow: -1px -1px 0px #999;
+    text-decoration: none;
+    border-color: #425994;
+    background-color: #8FA1CD;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .title {
+	display: inline-block;
+	padding: 2px;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat span a {
+	text-decoration: none;
+	color: inherit;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .value {
+	float: right;
+	display: inline-block;
+	padding: 2px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .color {
+	float: left;
+	display: inline-block;
+	padding: 6px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .notice,
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .warning,
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .error {
+	font-weight: bold;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .value.notice {
+	background-color: #EEF;
+	border-color: #CCF;
+	color: #00F;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .value.warning {
+	background-color: #cf0;
+	border-color: #9c0;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-stats .dashboard-stat .value.error {
+	background-color: #c00;
+	border-color: #900;
+	color: #FFF;
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-chart,
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-chart div {
+	text-align: center;
+	margin: 3px auto 0px auto;
+}
+@media screen {
+	.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-chart .google_chart_png {
+		display: none;
+	}
+}
+@media print {
+	.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content .dashboard-chart .google_chart_svg {
+		display: none;
+	}
+}
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .proctime_results {
+	display:none;
+}

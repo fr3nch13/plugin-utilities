@@ -1,0 +1,521 @@
+@charset "utf-8";
+
+/**
+ * 
+ * Basic Color themes:
+ * primary background color: #425995
+ * text color: #444
+ * body background color: #E8E7E3
+ */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/** General Style Info **/
+body {
+	color: #444;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10px;
+	margin: 0;
+	background-color: #FFF;
+}
+
+/*** Main Layout ***/
+
+.ajax_data { display:none; }
+
+.debugging { clear: both; padding-top: 10px; display: block; }
+.debugging::before { content: ' '; }
+
+/* The Whole site is in this */
+#site {
+	display: none;
+	/* nihfo.object.site.js will change this.*/
+}
+
+/* Where the content goes */
+.content {
+	text-align: left;
+/*	margin:0 20px; */
+	position:relative;
+}
+@media only screen and (max-width: 360px) {
+	.content {
+		margin:0;
+	}
+}
+
+
+/* Header stuff */
+#header {
+	background-color: #81BAE7;
+	background: -webkit-linear-gradient(#C2CDE8, #8FA1CD); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#C2CDE8, #8FA1CD); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#C2CDE8, #8FA1CD); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#C2CDE8, #8FA1CD); /* Standard syntax */
+	color:#FFF;
+	/*border-bottom: 1px solid #CACACA;*/
+	border-bottom: 1px solid #425994;
+	box-shadow: 0 2px 3px #C2CDE8;
+	padding: 11px 20px;
+	height: 18px;
+	font-weight:bold;
+	position:relative;
+}
+
+#header a,
+#menu_user li.user-name {
+	color:#FFF;
+	text-shadow: -1px -1px 0 #999;
+}
+
+
+#site_title {
+	float:left;
+	font-size:120%;
+}
+@media only screen and (max-width: 360px) {
+	#site_title {
+		clear: both;
+		font-size:120%;
+	}
+}
+
+/*** User Login/Logout Menu ***/
+#menu_user {
+	float:right;
+	position: relative;
+}
+@media only screen and (max-width: 360px) {
+	#menu_user {
+	float:left;
+		clear: both;
+	}
+}
+
+#menu_user ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+#menu_user li {
+	background: none repeat scroll 0 0 transparent;
+	border-right: 1px solid #FFF;
+	display: inline;
+	margin: 0;
+	padding: 0 0.8em 0 0.4em;
+}
+
+#menu_user li:last-child {
+	border-right-width: 0px;
+	padding-right: 0;
+}
+
+#menu_user li a.highlighted {
+	color:#FFFF00;
+}
+
+/* Footer stuff */
+#footer {
+	margin:20px 0px;
+	background: #EAEAEA;
+	border-top: 1px solid #CACACA;
+	border-bottom: 1px solid #CACACA;
+}
+
+/*** The main body of the site ***/
+
+#body .top .page_options.no-menu ul,
+#body .tabs .page_options.no-menu ul,
+#body .top .export-options.no-menu ul,
+#body .tabs .export-options.no-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#body .top .page_options.no-menu ul li,
+#body .tabs .page_options.no-menu ul li,
+#body .top .export-options.no-menu ul li,
+#body .tabs .export-options.no-menu ul li {
+	float: left;
+}
+
+
+.nihfo-object-tabs .ui-tabs-nav li {
+	border-width: 0px;
+}
+.nihfo-object-tabs .ui-tabs-nav li.ui-tabs-active a
+{
+	background-color: #FFF;
+}
+
+input[type=submit],
+.actions ul li a,
+.actions a,
+.button,
+#body .top .page_options span a,
+#body .tabs .page_options span a,
+#body .top .export-options span a,
+#body .tabs .export-options span a,
+#body .top .page_options.no-menu li a,
+#body .tabs .page_options.no-menu li a,
+#body .top .export-options.no-menu li a,
+#body .tabs .export-options.no-menu li a,
+div.form_search div.field_holder input[type=submit],
+table.listings td.actions a,
+.nihfo-object-tabs .ui-tabs-nav li a,
+.nihfo-object-tabs nav.tabs a,
+.paginate-objects div.paginate_numbers .paging_link,
+.paginate-objects div.paginate_show_all a,
+.paginate-objects div.paginate_numbers .current,
+div.listings_options a,
+div.dashboard-options span a,
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content-options .page_options span a,
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content-options .page_options.no-menu li a,
+.sortable_columns_master .multi_options button.sortable-multi-option,
+div.details-options a,
+form div.btn-group > button {
+	margin:0;
+	white-space: nowrap;
+	padding: 3px 6px;
+	background-color: #EDEDED;
+	border-left: 1px solid #BFBFBF;
+	border-top: 1px solid #BFBFBF;
+	border-right: 1px solid #EDEDED;
+	border-bottom: 1px solid #BFBFBF;
+	border-radius: 0px;
+	box-sizing: border-box;
+	text-shadow: 1px 1px 0 #FFF;
+	text-decoration: none;
+	color: #222;
+}
+
+form div.submit input[type=submit]:first-child,
+#body .top .page_options span a,
+#body .tabs .page_options span a,
+#body .top .export-options span a,
+#body .tabs .export-options span a,
+#body .top .page_options.no-menu li:first-child a,
+#body .tabs .page_options.no-menu li:first-child a,
+#body .top .export-options.no-menu li:first-child a,
+#body .tabs .export-options.no-menu li:first-child a,
+div.debugging-options a:first-child,
+table.listings td.actions a:first-of-type,
+.nihfo-object-tabs .ui-tabs-nav li:first-child a,
+.nihfo-object-tabs nav.tabs a:first-child,
+.paginate-objects div.paginate_numbers .paging_link:first-child,
+.paginate-objects div.paginate_show_all a:first-child,
+div.listings_options a:first-child,
+div.listings_options a.nihfo-plugin-filter-button-toggle-show,
+div.listings_options a.nihfo-plugin-filter-button-toggle-hide,
+div.dashboard-options span a,
+form div.btn-group > button:first-child,
+.sortable_columns_master .multi_options button.sortable-multi-option:first-child {
+	border-top-left-radius: 4px;
+}
+
+form div.submit input[type=submit]:first-child,
+#body .top .page_options span a,
+#body .tabs .page_options span a,
+#body .top .export-options span a,
+#body .tabs .export-options span a,
+#body .top .page_options.no-menu li:first-child a,
+#body .tabs .page_options.no-menu li:first-child a,
+#body .top .export-options.no-menu li:first-child a,
+#body .tabs .export-options.no-menu li:first-child a,
+div.debugging-options a:first-child,
+table.listings td.actions a:first-of-type,
+.paginate-objects div.paginate_numbers .paging_link:first-child,
+.paginate-objects div.paginate_show_all a:first-child,
+div.listings_options a:first-child,
+div.listings_options a.nihfo-plugin-filter-button-toggle-show,
+div.listings_options a.nihfo-plugin-filter-button-toggle-hide,
+div.dashboard-options span a,
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content-options .page_options:last-child span a, /* these float right, so last-child is correct */
+.nihfo-object-dashboard .dashboard-blocks .dashboard-block .dashboard-block-content-options .page_options.no-menu li:first-child a,
+.sortable_columns_master .multi_options button.sortable-multi-option:first-child,
+form div.btn-group > button:first-child {
+	border-bottom-left-radius: 4px;
+}
+
+#body .top .page_options span a,
+#body .tabs .page_options span a,
+#body .top .export-options span a,
+#body .tabs .export-options span a,
+#body .top .page_options.no-menu li:last-child a,
+#body .tabs .page_options.no-menu li:last-child a,
+#body .top .export-options.no-menu li:last-child a,
+#body .tabs .export-options.no-menu li:last-child a,
+div.debugging-options a:last-child,
+div.form_search div.field_holder input[type=submit]:last-child,
+table.listings td.actions a:last-of-type,
+.nihfo-object-tabs .ui-tabs-nav li:last-child a,
+.nihfo-object-tabs nav.tabs a:last-child,
+.paginate-objects div.paginate_numbers .paging_link:last-child,
+.paginate-objects div.paginate_show_all a:last-child,
+div.listings_options a:last-child,
+div.listings_options a.nihfo-plugin-filter-button-toggle-show,
+div.listings_options a.nihfo-plugin-filter-button-toggle-hide,
+div.dashboard-options span a,
+form div.btn-group > button:last-child,
+.sortable_columns_master .multi_options button.sortable-multi-option:last-child {
+	border-top-right-radius: 4px;
+	border-right: 1px solid #BFBFBF; 
+}
+
+form div.submit input[type=submit]:last-child,
+#body .top .page_options span a,
+#body .tabs .page_options span a,
+#body .top .export-options span a,
+#body .tabs .export-options span a,
+#body .top .page_options.no-menu li:last-child a,
+#body .tabs .page_options.no-menu li:last-child a,
+#body .top .export-options.no-menu li:last-child a,
+#body .tabs .export-options.no-menu li:last-child a,
+div.debugging-options a:first-child,
+div.form_search div.field_holder input[type=submit]:last-child,
+table.listings td.actions a:last-of-type,
+.paginate-objects div.paginate_numbers .paging_link:last-child,
+.paginate-objects div.paginate_show_all a:last-child,
+div.listings_options a:last-child,
+div.listings_options a.nihfo-plugin-filter-button-toggle-show,
+div.listings_options a.nihfo-plugin-filter-button-toggle-hide,
+div.dashboard-options span a,
+form div.btn-group > button:last-child,
+.sortable_columns_master .multi_options button.sortable-multi-option:last-child  {
+	border-bottom-right-radius: 4px;
+}
+
+#body .top .page_options.no-menu li a.button_red,
+#body .tabs .page_options.no-menu li a.button_red {
+	background: -moz-linear-gradient(#FF0000, #CC0000) repeat scroll 0 0 transparent;
+	border: 1px solid #770000;
+	text-shadow: 1px 1px 0 #333;
+	color: #eee;
+}
+
+input[type=submit]:hover,
+.actions ul li a:hover,
+.actions a:hover,
+.button:hover,
+#body .top .page_options span a:hover,
+#body .top .page_options span a.active,
+#body .tabs .page_options span a:hover,
+#body .tabs .page_options span a.active,
+#body .top .export-options span a:hover,
+#body .top .export-options span a.active,
+#body .tabs .export-options span a:hover,
+#body .tabs .export-options span a.active,
+#body .top .page_options.no-menu li a:hover,
+#body .tabs .page_options.no-menu li a:hover,
+#body .top .export-options.no-menu li a:hover,
+#body .top .export-options.no-menu li a.active,
+#body .tabs .export-options.no-menu li a:hover,
+#body .tabs .export-options.no-menu li a.active,
+div.debugging-options a:hover,
+div.listings_table_wrapper_scrollers a:hover,
+div.form_search div.button_holder a.button:hover,
+table.listings td.actions a:hover,
+.nihfo-object-tabs .ui-tabs-nav li a:hover,
+.nihfo-object-tabs nav.tabs a:hover,
+.nihfo-object-tabs nav.tabs a.tab.active:hover,
+.paginate-objects div.paginate_numbers .paging_link:hover,
+.paginate-objects div.paginate_show_all a:hover,
+div.listings_options a:hover,
+div.dashboard-options span a:hover,
+div.dashboard-options span a.active,
+form div.btn-group > button.btn-primary,
+.sortable_columns_master .multi_options button.sortable-multi-option:hover {
+	color: #FFF;
+	text-shadow: -1px -1px 0 #999;
+	text-decoration: none;
+	border-color: #425994;
+	background-color: #8FA1CD;
+}
+
+input[type=submit]:active,
+.actions ul li a:active,
+.actions a:active,
+.button:active,
+#body .top .page_options span a:active,
+#body .top .page_options span a.active,
+#body .tabs .page_options span a:active,
+#body .tabs .page_options span a.active,
+#body .top .export-options span a:active,
+#body .top .export-options span a.active,
+#body .tabs .export-options span a:active,
+#body .tabs .export-options span a.active,
+#body .top .page_options.no-menu li a:active,
+#body .tabs .page_options.no-menu li a:active,
+#body .top .export-options.no-menu li a:active,
+#body .top .export-options.no-menu li a.active,
+#body .tabs .export-options.no-menu li a:active,
+#body .tabs .export-options.no-menu li a.active,
+div.debugging-options a:active,
+div.listings_table_wrapper_scrollers a:active,
+div.form_search div.button_holder a.button:active,
+div.form_search div.field_holder input[type="submit"]:active,
+table.listings td.actions a:active,
+.nihfo-object-tabs .ui-tabs-nav li a:active,
+.nihfo-object-tabs nav.tabs a:active,
+.paginate-objects div.paginate_numbers .paging_link:active,
+.paginate-objects div.paginate_show_all a:active,
+div.listings_options a:active,
+div.dashboard-options span a:active,
+div.dashboard-options span a.active,
+.sortable_columns_master .multi_options button.sortable-multi-option:active {
+	-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+
+/* Page Content */
+
+/** Inline Search Form **/
+div.form_search {
+	float:right;
+	padding: 0;
+	width: 665px;
+	text-align: right;
+	clear: both;
+}
+div.form_search form {
+	margin: 0;
+	width: inherit;
+}
+
+div.form_search div {
+	text-align: left;
+	vertical-align: top;
+}
+
+div.form_search fieldset {
+	border-width: none;
+	margin: 0;
+	padding: 0px;
+}
+div.form_search div.field_holder {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+div.form_search div.field_holder:after {
+	clear: both;
+}
+div.form_search div.field_holder div.search_field {
+	display: block;
+	float: left;
+	width: 600px;
+	margin: 0;
+	padding: 0;
+}
+div.form_search div.field_holder div.search_field > * {
+	vertical-align:top;
+}
+div.form_search div.field_holder div.search_field a.expand_contract {
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	font-size: 150%;
+	width: 15px;
+}
+div.form_search div.field_holder div.search_field a.expand_contract:hover {
+	text-decoration: none;
+}
+div.form_search div.field_holder div.search_field textarea {
+}
+div.form_search div.field_holder div.search_field textarea:focus {
+	height: 10em;
+}
+div.form_search div.field_holder div.search_field textarea,
+div.form_search div.field_holder div.search_field input[type="text"] {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin:0;
+	width: 585px;
+}
+
+div.form_search div.switch_holder,
+div.form_search div.button_holder {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	clear: none;
+	white-space: nowrap;
+}
+div.form_search div.switch_holder {
+	padding-top: 10px;
+	width: 25%;
+}
+div.form_search div.switch_holder.switch_first {
+	padding-left: 10%;
+}
+div.form_search div.button_holder {
+	float: right;
+	margin-right: 10%;
+	margin-top: 3px;
+}
+
+div.form_search div.button_holder a.button {
+	margin: 0;
+}
+div.form_search div.field_holder input[type="submit"] {
+	border-left-width: 0px;
+}
+div.form_search div.button_holder a.button {
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+}
+div.form_search div.button_holder a.button:first-child {
+	-webkit-border-radius: 0px 0px 0px 4px;
+	-moz-border-radius: 0px 0px 0px 4px;
+	border-radius: 0px 0px 0px 4px;
+}
+div.form_search div.button_holder a.button:last-child {
+	border-right: 1px solid #999;
+	-webkit-border-radius: 0px 0px 4px 0px;
+	-moz-border-radius: 0px 0px 4px 0px;
+	border-radius: 0px 0px 4px 0px;
+}
+
+/** Multiselect Form **/
+
+form.multiselect_form div.submit {
+	text-align: right;
+}
+
+/** jQuery stuff here **/
+
+.ui-datepicker-prev span 
+{
+	width: 0px;
+	height: 0px;
+	border-bottom: 7px solid rgba(255,255,255,0);
+	border-top: 7px solid rgba(255,255,255,0);
+	border-right: 7px solid rgba(255,255,255,1);
+/*	margin: 0px 0px -1px 5px; */
+	margin: 2px;
+}
+.ui-datepicker-next span 
+{
+	width: 0px;
+	height: 0px;
+	border-bottom: 7px solid rgba(255,255,255,0);
+	border-top: 7px solid rgba(255,255,255,0);
+	border-left: 7px solid rgba(255,255,255,1);
+/*	margin: 0px 0px -1px 5px; */
+	margin: 2px;
+}

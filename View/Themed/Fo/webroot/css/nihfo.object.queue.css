@@ -1,0 +1,47 @@
+.nihfo-object-queue {
+	position: relative;
+	white-space: nowrap;
+	background-color: #EDEDED;
+	border: 1px solid #ACACAC;
+	box-sizing: border-box;
+	text-shadow: 1px 1px 0 #EAEAEA;
+	text-decoration: none;
+	color: #222;
+	border-radius: 4px;
+	text-align: center;
+	height: 2em;
+}
+.nihfo-object-queue.NOT_READY {
+}
+.nihfo-object-queue.NOT_STARTED {
+	background-color: #F90;
+}
+.nihfo-object-queue.IN_PROGRESS {
+	background-color: #FF9;
+}
+.nihfo-object-queue.FAILED {
+	background-color: #F99;
+}
+.nihfo-object-queue.COMPLETED {
+	background-color: #9F9;
+}
+.nihfo-object-queue.UNKNOWN {
+}
+
+.nihfo-object-queue .progress-label {
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	padding-top: 0.2em;
+}
+.nihfo-object-queue .ui-progressbar-value {
+	position: absolute;
+	left: 0;
+	margin: 0 !important;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,443 @@
+.object-table {
+}
+.object-table .no_results {
+	padding: 10px;
+	margin: 15px;
+	background-color: #cf0;
+	border: 1px solid #6d0;
+	border-radius: 4px;
+	text-shadow: 1px 1px 0px #FFF;
+	color:#460;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+.object-table form.multiselect_form {
+	width: 100%;
+	margin-right: 0;
+}
+.object-table div.listings_table_wrapper_scrollers {
+	padding: 5px 10px;
+	margin-bottom: 0;
+}
+.object-table .listings_table_wrapper_scrollers div {
+	margin-bottom: 0;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects {
+	display: inline-block;
+	font-size: 95%;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects div {
+	display: inline-block;
+	padding-right: 5px;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_counter {
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_counter .counter {
+	padding-top: 4px;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_show_all {
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_show_all a {
+	display: block;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_numbers {
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_numbers .paging_link {
+	display: inline-block;
+	padding: 0;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_numbers .paging_link a,
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_numbers .paging_link > i {
+	display: block;
+	padding: 3px 6px;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_numbers .paging_link.disabled a,
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_numbers .paging_link.disabled > i {
+	color: #888;
+}
+.object-table .listings_table_wrapper_scrollers .paginate-objects .paginate_numbers span.current {
+	background-color: #C2CDE8;
+	border: 1px solid #8FA1CD;
+	box-shadow: 0px 0px 5px #C2CDE8;
+	color: #425994;
+	font-weight: bold;
+}
+.object-table .listings_table_wrapper_scrollers .table-options {
+	display: inline-block;
+	float: right;
+	clear: right;
+	margin-bottom: 0;
+	vertical-align: top;
+}
+.object-table .listings_table_wrapper_scrollers .table-options a {
+	display:inline-block;
+	padding: 6px 7px;
+	white-space: nowrap;
+	background-color: #EDEDED;
+	border: 1px solid #ACACAC;
+	box-sizing: border-box;
+	text-shadow: 1px 1px 0 #FFF;
+	text-decoration: none;
+	color: #222;
+	border-radius: 4px;
+}
+.object-table .listings_table_wrapper_scrollers .table-options input.js-search,
+.object-table .listings_table_wrapper_scrollers .table-options select.collapsible,
+.object-table .listings_table_wrapper_scrollers .table-options a {
+	display: inline-block;
+	padding: 6px 7px;
+	height: 2.6em;
+	margin-left: 4px;
+}
+.object-table .listings_table_wrapper_scrollers .table-options input.js-search,
+.object-table .listings_table_wrapper_scrollers .table-options select.collapsible {
+	width: 200px;
+}
+.object-table .listings_table_wrapper_scrollers .table-options input.js-search {
+}
+.object-table form .search_input.search_active,
+.object-table .listings_table_wrapper_scrollers .table-options input.js-search.search_active {
+	background-color:#F6FFB7;
+}
+reload-icon
+.object-table .listings_table_wrapper_scrollers .table-options a.js-auto_load_ajax {
+	display: none;
+}
+.object-table .listings_table_wrapper_scrollers .table-options a.js-auto_load_ajax i {
+	margin-right: 0.5em;
+}
+.object-table .listings_table_wrapper_scrollers .table-options a.js-export {
+}
+.object-table .listings_table_wrapper_scrollers .table-options a.js-export i.export-icon {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 0.5em;
+	margin-top: -0.3em;
+	width: 1.8em;
+	height: 1.8em;
+	background-image: url('../img/excel-icon.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+}
+.object-table .listings_table_wrapper_scrollers .table-options a.js-export span {
+	display: inline-block;
+	vertical-align: top;
+}
+.object-table .listings_table_wrapper_scrollers .table-options select.collapsible.collapsed {
+	background-color: #F6FFB7;
+}
+.object-table .listings_table_wrapper_scrollers .table-options select.collapsible option.collapsed {
+	font-weight: bold;
+}
+.object-table .listings_table_wrapper_scrollers .table-options select.collapsible option.collapsed:after {
+	content: " - Hidden";
+}
+.object-table div.stay_with_table {
+	position: relative;
+	background-color: #FFF;
+}
+.object-table a.refresh-button {
+	display:none;
+}
+/** fix to make sure the icon buttons line up with the text buttons **/
+.object-table .fa {
+	font-size: 1.1em;
+	line-height: 1.14em;
+}
+.object-table .fa.fa-lg {
+	font-size: 1.3em;
+}
+
+/** The actual table stuff **/
+.object-table table.actual-table {
+	border-right:0;
+	clear: both;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	border-top: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+	border-left:1px solid #DDD;
+	border-collapse: collapse;
+}
+.object-table table.actual-table table {
+	margin-top: 0px;
+}
+/* a table embedded in another table */
+.object-table table.actual-table .debugging,
+.object-table table.actual-table .proctime_results {
+	display: none;
+}
+
+.object-table table.actual-table .object-table table.actual-table {
+	width: 100%;
+}
+.object-table table.actual-table caption {
+	padding: 5px;
+	text-align: left;
+}
+.object-table table.actual-table thead {
+	background-color: #FFF;
+	border:0;
+}
+.object-table table.actual-table th {
+	position: relative;
+	border-bottom:2px solid #555;
+	text-align: left;
+	white-space: nowrap;
+	padding: 6px;
+	background-color: #F6F6F6;
+	border-left:1px solid #FFF;
+	min-width: 50px;
+}
+.object-table table.actual-table th a {
+	text-decoration: none;
+}
+.object-table table.actual-table th a.asc:after {
+	content: ' ⇣';
+}
+.object-table table.actual-table th a.desc:after {
+	content: ' ⇡';
+}
+.object-table table.actual-table.jsordering th {
+	color: #425995;
+}
+.object-table table.actual-table.jsordering th {
+	color: #425995;
+	cursor: pointer;
+}
+.object-table table.actual-table.jsordering th.asc,
+.object-table table.actual-table.jsordering th.desc {
+	background-color: #92CBF8;
+	color: #FFF;
+	text-shadow: -1px -1px 0px #999;
+}
+
+.object-table table.actual-table th,
+.object-table table.actual-table td {
+	margin-bottom: 0px;
+	white-space: nowrap;
+	min-width: 50px;
+}
+.object-table table.actual-table th.word-wrap,
+.object-table table.actual-table td.word-wrap,
+.object-table table.actual-table td.textarea {
+	white-space: normal;
+	max-width: 400px;
+}
+.object-table table.actual-table th div.cell-content,
+.object-table table.actual-table td div.cell-content {
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.object-table table.actual-table.jsordering th.asc div.cell-content:after {
+	content: ' ⇣';
+}
+.object-table table.actual-table.jsordering th.desc div.cell-content:after {
+	content: ' ⇡';
+}
+.object-table table.actual-table th input.multiselect_all {
+	padding: 0;
+	margin: 0;
+}
+
+/* for collapsible columns. */
+.object-table table.actual-table th span.collapsible {
+	cursor:pointer;
+	margin-left: 5px;
+	color: #444;
+	font-weight: bold;
+	font-size: 90%;
+	content:"-";
+	float:left;
+}
+.object-table table.actual-table th span.collapsible:after {
+	content:"-";
+}
+.object-table table.actual-table th.collapsed span.collapsible:after {
+	content:"+";
+}
+.object-table table.actual-table th i.table-handle {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	display: none;
+	cursor: move;
+}
+.object-table table.actual-table th.hovered i.table-handle {
+	display: block;
+}
+.object-table table.actual-table th div.collapsed,
+.object-table table.actual-table td div.collapsed {
+	display: none;
+}
+.object-table table.actual-table th.collapsed,
+.object-table table.actual-table td.collapsed {
+	width:10px !important;
+}
+
+.object-table table.actual-table th.divider,
+.object-table table.actual-table td.divider {
+	border-right:1px solid #99F !important;
+}
+.object-table table.actual-table th.column-collapsible.column-collapsed,
+.object-table table.actual-table td.column-collapsible.column-collapsed {
+	display: none;
+}
+.object-table table.actual-table tr:nth-child(odd) {
+	background: #FFF;
+}
+.object-table table.actual-table tr:nth-child(even) {
+	background: #f9f9f9;
+}
+.object-table table.actual-table tr.hovered {
+	background-color: #F6FFB7 !important;
+	box-shadow: 0px 0px 5px #D9EF2F;
+}
+.object-table table.actual-table tr.hovered td {
+	background-color: #F6FFB7 !important;
+	border-bottom:1px solid #D9EF2F;
+}
+.object-table table.actual-table tr.highlight_click {
+	background-color: #EEF !important;
+	box-shadow: 0px 0px 5px #CCF;
+}
+.object-table table.actual-table tr.highlight_click td {
+	background-color: #EEF !important;
+	border-bottom:1px solid #CCF;
+}
+.object-table table.actual-table tr.highlight-red td,
+.object-table table.actual-table tr td.highlight-red {
+	border-color: #ff0000 !important; 
+	background-color: rgba(255,0,0,0.3) !important;
+}
+.object-table table.actual-table tr.highlight-yellow td,
+.object-table table.actual-table tr td.highlight-yellow {
+	border-color: #ffff00 !important;
+	background-color: rgba(255,255,0,0.3) !important;
+}
+.object-table table.actual-table tr.highlight-green td,
+.object-table table.actual-table tr td.highlight-green {
+	border-color: #00ff00 !important;
+	background-color: rgba(0,255,0,0.3) !important;
+}
+
+/* this is the owner of the object */
+.object-table table.actual-table tr.owner {
+	background-color: #DBEFFF !important;
+}
+.object-table table.actual-table tr.owner td {
+	border-bottom:1px solid #A5D8FF;
+}
+.object-table table.actual-table tr td {
+	padding: 6px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom:1px solid #ddd;
+}
+.object-table table.actual-table td.actions, 
+.object-table table.actual-table td.actions div {
+	white-space: nowrap;
+}
+.object-table table.actual-table td.actions div.editable-actions {
+	margin: 0;
+}
+.object-table table.actual-table td.actions div.editable-actions-on {
+	display: none;
+}
+.object-table table.actual-table td.hovered {
+	background-color: #F6FFB7 !important;
+	border-bottom:1px solid #D9EF2F;
+}
+.object-table table.actual-table td.actions a {
+	display: inline-block;
+	height: 21px;
+	line-height: 1.14em;
+	font-size: 1.1em;
+}
+.object-table table.actual-table td.min_width_100 {
+	min-width: 300px;
+}
+.object-table table.actual-table td.bold {
+	font-weight: bold;
+}
+.object-table table.actual-table td.ajax-count-highlight,
+.object-table table.actual-table td.highlight {
+	/*background: #EFEFFF;*/
+	border-bottom-color: #99F;
+	font-weight: bold;
+}
+.object-table table.actual-table td.ajax-count-highlight.highlight-green,
+.object-table table.actual-table td.highlight.highlight-green {
+	background-color: rgba(0,255,0,0.4); 
+	border-color: #00ff00;
+}
+.object-table table.actual-table td.ajax-count-highlight.highlight-yellow,
+.object-table table.actual-table td.highlight.highlight-yellow {
+	background-color: rgba(255,255,0,0.4);
+	border-color: #ffff00; 
+}
+.object-table table.actual-table td.ajax-count-highlight.highlight-red,
+.object-table table.actual-table td.highlight.highlight-red {
+	background-color: rgba(255,0,0,0.4);
+	border-color: #ff0000; 
+}
+.object-table table.actual-table td.ajax-count-highlight.highlight-blue,
+.object-table table.actual-table td.highlight.highlight-blue {
+	background-color: rgba(0,0,255,0.4);
+	border-color: #0000FF; 
+}
+.object-table table.actual-table td div.cell-content .embiggen {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.object-table table.actual-table td input.multiselect_item {
+	padding: 0;
+	margin: 0;
+}
+
+/* editable objects */
+.object-table table.actual-table td.editable {
+}
+.object-table table.actual-table td.editable.editable-date,
+.object-table table.actual-table td.editable.editable-time,
+.object-table table.actual-table td.editable.editable-select {
+	min-width: 150px;
+}
+.object-table table.actual-table td.editable.editable-datetime {
+	min-width: 165px;
+}
+.object-table table.actual-table tr td.editable div.editable-input input,
+.object-table table.actual-table tr td.editable div.editable-input select,
+.object-table table.actual-table tr td.editable div.editable-input textarea {
+	margin:0;
+}
+.object-table table.actual-table td.textarea {
+	min-width: 300px;
+}
+.object-table table.actual-table td.textarea div.cell-content {
+	font-family: monospace;
+    white-space: pre-wrap;
+}
+.object-table table.actual-table td.textarea div.cell-content span.editable-content a.show {
+	font-weight: bold;
+}
+
+/** the read more for for text areas */
+
+
+/* shadow for a floating table heads */
+div.floatThead-container {
+	box-shadow: 0 3px 3px #CCC;
+	margin: 0;
+	padding: 0;
+}
+div.floatThead-wrapper {
+	margin: 0;
+	padding: 0;
+}

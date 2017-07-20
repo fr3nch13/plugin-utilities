@@ -1,0 +1,181 @@
+/* Iconize 0.5 */
+
+/* websites (pictures and movies) */
+a[href *="youtube.com/watch?"]:not(.no-icon), 
+a[href *="sevenload.com/videos/"]:not(.no-icon), 
+a[href *="metacafe.com/watch/"]:not(.no-icon), 
+a[data-ext="video"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_film.gif) no-repeat center right;
+}
+
+a[href *="flickr.com/photos/"]:not(.no-icon), 
+a[href *="zooomr.com"]:not(.no-icon), 
+a[href *="imageshack.us"]:not(.no-icon), 
+a[href *="bubbleshare.com"]:not(.no-icon), 
+a[href *="sevenload.com/bilder/"]:not(.no-icon), 
+a[data-ext="photo"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pic.gif) no-repeat center right;
+}
+
+/* extensions */
+
+a[href$='.doc']:not(.no-icon),a[data-ext="doc"]:not(.no-icon),a[href$='.rtf']:not(.no-icon),a[data-ext="rtf"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_doc.gif) no-repeat center right;
+}
+
+a[href$='.txt']:not(.no-icon),a[data-ext="txt"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_txt.gif) no-repeat center right;
+}
+
+a[href$='.xls']:not(.no-icon),a[data-ext="xls"]:not(.no-icon),a[href$='.csv']:not(.no-icon),a[data-ext="csv"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_xls.gif) no-repeat center right;
+}
+
+a[href$='.rss']:not(.no-icon),a[data-ext="rss"]:not(.no-icon),a[href$='.atom']:not(.no-icon),a[data-ext="atom"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_feed.gif) no-repeat center right;
+}
+
+a[href$='.opml']:not(.no-icon),a[data-ext="opml"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_opml.gif) no-repeat center right;
+}
+
+a[href$='.phps']:not(.no-icon),a[data-ext="phps"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_phps.gif) no-repeat center right;
+}
+
+a[href$='.torrent']:not(.no-icon),a[data-ext="torrent"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_torrent.gif) no-repeat center right;
+}
+
+a[href$='.vcard']:not(.no-icon),a[data-ext="vcard"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_vcard.gif) no-repeat center right;
+}
+
+a[href$='.exe']:not(.no-icon),a[data-ext="exe"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_exe.gif) no-repeat center right;
+}
+
+a[href$='.dmg']:not(.no-icon),a[data-ext="dmg"]:not(.no-icon),a[href$='.app']:not(.no-icon),a[data-ext="app"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_dmg.gif) no-repeat center right;
+}
+
+a[href$='.pps']:not(.no-icon),a[data-ext="pps"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pps.gif) no-repeat center right;
+}
+
+a[href$='.pdf']:not(.no-icon),a[data-ext="pdf"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pdf.gif) no-repeat center right;
+}
+
+a[href$='.xpi']:not(.no-icon),a[data-ext="xpi"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_plugin.gif) no-repeat center right;
+}
+
+a[href$='.fla']:not(.no-icon),a[data-ext="fla"]:not(.no-icon),a[href$='.swf']:not(.no-icon),a[data-ext="swf"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_flash.gif) no-repeat center right;
+}
+
+a[href$='.zip']:not(.no-icon),a[data-ext="zip"]:not(.no-icon),a[href$='.rar']:not(.no-icon),a[data-ext="rar"]:not(.no-icon),a[href$='.gzip']:not(.no-icon),a[data-ext="gzip"]:not(.no-icon),a[href$='.bzip']:not(.no-icon),a[data-ext="bzip"]:not(.no-icon),a[href$='.ace']:not(.no-icon),a[data-ext="ace"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_archive.gif) no-repeat center right;
+}
+
+a[href$='.ical']:not(.no-icon),a[data-ext="ical"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_ical.gif) no-repeat center right;
+}
+
+a[href$='.css']:not(.no-icon),a[data-ext="css"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_css.gif) no-repeat center right;
+}
+
+a[href$='.ttf']:not(.no-icon),a[data-ext="ttf"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_ttf.gif) no-repeat center right;
+}
+
+a[href$='.jpg']:not(.no-icon),a[data-ext="jpg"]:not(.no-icon),a[href$='.gif']:not(.no-icon),a[data-ext="gif"]:not(.no-icon),a[href$='.png']:not(.no-icon),a[data-ext="png"]:not(.no-icon),a[href$='.bmp']:not(.no-icon),a[data-ext="bmp"]:not(.no-icon),a[href$='.jpeg']:not(.no-icon),a[data-ext="jpeg"]:not(.no-icon),a[href$='.svg']:not(.no-icon),a[data-ext="svg"]:not(.no-icon),a[href$='.eps']:not(.no-icon),a[data-ext="eps"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pic.gif) no-repeat center right;
+}
+
+a[href$='.mov']:not(.no-icon),a[data-ext="mov"]:not(.no-icon),a[href$='.wmv']:not(.no-icon),a[data-ext="wmv"]:not(.no-icon),a[href$='.mp4']:not(.no-icon),a[data-ext="mp4"]:not(.no-icon),a[href$='.avi']:not(.no-icon),a[data-ext="avi"]:not(.no-icon),a[href$='.mpg']:not(.no-icon),a[data-ext="mpg"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_film.gif) no-repeat center right;
+}
+
+a[href$='.mp3']:not(.no-icon),a[data-ext="mp3"]:not(.no-icon),a[href$='.wav']:not(.no-icon),a[data-ext="wav"]:not(.no-icon),a[href$='.ogg']:not(.no-icon),a[data-ext="ogg"]:not(.no-icon),a[href$='.wma']:not(.no-icon),a[data-ext="wma"]:not(.no-icon),a[href$='.m4a']:not(.no-icon),a[data-ext="m4a"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_music.gif) no-repeat center right;
+}
+
+/* messenger */
+a[href ^="aim:"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_aim.gif) no-repeat center right;
+}
+
+a[href ^="msnim:"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_msn.gif) no-repeat center right;
+}
+
+a[href ^="xmpp:"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_jabber.gif) no-repeat center right;
+}
+
+a[href *="icq.com"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_icq.gif) no-repeat center right;
+}
+
+a[href *="edit.yahoo.com/config/send_webmesg?"]:not(.no-icon) { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_yim.gif) no-repeat center right;
+}
+
+a[href ^="callto:"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_call.gif) no-repeat center right;
+}
+
+a[href ^="skype:"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_skype.gif) no-repeat center right;
+}
+
+a[href ^="gg:"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_gadugadu.gif) no-repeat center right;
+}
+
+/* email */
+a[href ^="mailto:"]:not(.no-icon) {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_mailto.gif) no-repeat center right;
+}
+
+/* use this class to make sure that images won't get iconized */
+
+.imageLink {
+	padding-right: 0px !important;
+	background: none !important;
+}

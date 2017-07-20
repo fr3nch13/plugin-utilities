@@ -1,0 +1,84 @@
+/* Basic styling */
+/* Draw the lines */
+.jOrgChart .chart-line {
+  height                : 20px;
+  width                 : 4px;
+}
+
+.jOrgChart .chart-down {
+  background-color 		: #ccc;	
+  margin 				: 0px auto;
+}
+
+.jOrgChart .chart-top {
+  border-top            : 4px solid #ccc;
+}
+
+.jOrgChart .chart-left {
+  border-right          : 2px solid #ccc;
+}
+
+.jOrgChart .chart-right {
+  border-left           : 4px solid #ccc;
+}
+
+/* node cell */
+.jOrgChart td {
+  text-align            : center;
+  vertical-align        : top;
+  padding               : 0;
+}
+
+/* The node */
+.jOrgChart .chart-node {
+  position              : relative;
+  display               : inline-block;
+  min-width             : 60px;
+  min-height            : 35px;
+  z-index 				: 10;
+  margin                : 0 2px;
+  padding               : 3px;
+  vertical-align        : middle;
+  border-radius         : 7px;
+  border                : 2px solid #99F;
+  box-shadow            : 0 2px 2px #CCC;
+  background            : #EFEFFF;
+}
+.jOrgChart tr.hovered-ancestor .chart-node {
+  background            : #99F;
+}
+.jOrgChart tr.hovered .chart-node {
+  background            : #F6FFB7;
+}
+.jOrgChart tr.hovered-descendant .chart-node {
+  background            : #FFF;
+}
+.jOrgChart .chart-node a {
+	display: inline-block;
+	margin-top: 15%;
+	margin-bottom: 12%;
+}
+.jOrgChart tr.expanded .chart-node {
+	cursor: n-resize;
+}
+.jOrgChart tr.contracted .chart-node {
+	cursor: s-resize;
+}
+.jOrgChart .chart-node i {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	display: none;
+}
+
+
+/* jQuery drag 'n drop */
+
+.drag-active {
+  border-style			: dotted !important;
+}
+
+.drop-hover {
+  border-style			: solid !important;
+  border-color 			: #E05E00 !important;
+}

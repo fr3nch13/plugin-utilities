@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+.object-site {
+}
+.object-site * {
+	border-collapse: collapse;
+}
+
+.object-site .debugging-options {
+	padding-bottom: 10px;
+}
+/** Messages/Notifications like the flash message **/
+.object-site .notification {
+	position:fixed;
+	bottom:0px;
+	left:0;
+	z-index: 901;
+	text-align: center;
+	font-size: 200%;
+	box-shadow: 0px -2px 3px #ddd;
+	color:#FFF;
+	text-shadow: -1px -1px 0px #666;
+}
+.object-site .notification.notification-javascript,
+.object-site .notification.notification-flash {
+	right:0;
+	overflow:auto;
+}
+.object-site .notification.notification-javascript,
+#no_javascript {
+	display: none;
+	overflow:auto; 
+	background-color: #e00;
+	border-top: 1px solid #600;
+	padding: 10px;
+}
+#loading,
+#return-to-top {
+	display: none;
+	position:fixed;
+    bottom: 25px;
+    width: 1.5em;
+    height: 1.5em;
+	z-index: 905;
+	padding: 6px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(153, 153, 153, 1);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+	webkit-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.3);
+}
+.object-site .notification.notification-loading,
+.object-site #loading {
+	bottom:25px;
+	left:25px;
+	background-color: rgba(255, 255, 255, 1);
+}
+.object-site #return-to-top i,
+.object-site #loading i {
+    position: relative;
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+	text-shadow: 0px 0px 0px #FFF;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.object-site #return-to-top {
+    right: 25px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.object-site #return-to-top i {
+}
+.object-site #return-to-top:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.object-site #return-to-top:hover i {
+    top: -3px;
+}
+/* Specifically the notifications set by the flash component/helper */
+.object-site .notification.notification-flash {
+}
+.object-site .notification.notification-flash .message {
+	padding: 10px;
+	background-color: #C2CDE8;
+	border-top: 1px solid #425994;
+}
+.object-site .notification.notification-flash .message.success {
+	background-color: #5BA150;
+	border-top: 1px solid #2D6324;
+}
+.object-site .notification.notification-flash .message.error {
+	background-color: #d00;
+	border-top: 1px solid #600;
+}
+.object-site .notification.notification-flash .message.warning {
+	background-color: #cf0;
+	border-top: 1px solid #6d0;
+	text-shadow: 1px 1px 0px #FFF;
+	color:#460;
+}
+.object-site .site-header {
+}
+.object-site .site-header .site-title {
+}
+.object-site .site-header .user-menu {
+}
+.object-site .site-header .user-menu .user-name {
+}
+.object-site .site-header .user-menu .user-name .user-role {
+	display: inline-block;
+	color: #FFF;
+	padding: 2px 3px;
+	background-color: #d00;
+	border: 1px solid #600;
+	border-radius: 3px;
+}
+
+.object-site .main-body {
+	padding:0px 0px 10px 0px;
+}
+.object-site .main-menu {
+	height:30px;
+	background-color: #fbfbfb;
+}
+.object-site div.top {
+	padding: 0px 0px 10px 0px;
+	min-height: 25px;
+}
+.object-site .main-content > .top {
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #bfbfbf;
+	position: relative;
+	left: 0;
+	right: 0;
+	z-index: 1002;
+	padding-top: 10px;
+}
+.object-site .main-content > .top.fixed {
+  position: fixed;
+  top: 0;
+}
+.object-site div.top .page-header {
+	float:left;
+	margin-left: 10px;
+}
+.object-site .main-content > .top .page-header {
+}
+.object-site div.top h1 {
+	color: #294280;
+	font-size: 1.8em;
+}
+/* Subscription */
+.object-site div.top a.subscribable {
+	font-size: 90%;
+	display: none;
+	padding-right: 5px;
+}
+
+.object-site div.top > h1,
+.object-site div.top > h2,
+.object-site div.top > h3,
+.object-site div.top > .page_description { /* for the pages like forms */
+	margin-left: 10px;
+}
+.object-site div.top h2 {
+	color: #294280;
+	font-size: 1.4em;
+}
+.object-site div.top h3 {
+	color: #666;
+	font-size: 1.1em;
+}
+.object-site div.top .page_description {
+	clear:both;
+}
+.object-site div.top .page_description p {
+	font-size: 90%;
+	margin-top:15px;
+	margin-left:15px;
+	color: #777;
+}
+.object-site div.top .page-options {
+	float:right;
+	margin-right: 10px;
+}
+.object-site .main-content > .top > .page-options {
+	padding-top: 8px;
+}
+.object-site div.top .page-options > div {
+	min-height: 2.7em;
+	float: right;
+	clear: right;
+}
+.object-site div.top .page-options > div:last-child {
+	min-height: 1em;
+}
+.object-site .center {
+	clear:both;
+	position:relative;
+	display: block;
+}
+.object-site .main-content > .center {
+	padding: 5px;
+	margin: 0px;
+}
+.object-site .main-content pre {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	padding: 10px;
+	line-height: 1.2em;
+	font-size: 1.1em;
+}
+.object-site .main-content pre.description {
+	white-space: pre-wrap;
+}
+
+/* for the qtip'd menus */
+.object-site .qtip-menu > ul {
+	display: none;
+}
+.object-site .qtip-menu.qtip {
+	border: 1px solid #BFBFBF;
+	background-color: #FFF;
+	color: #222;
+	box-shadow: 0px 2px 4px #DDD;
+	border-radius: 4px;
+	min-width: 120px;
+}
+.object-site .qtip-menu.qtip .qtip-content {
+	padding: 0px;
+	overflow-y: auto;
+	max-height: 290px;
+}
+.object-site .qtip-menu.qtip ul * {
+	list-style: outside none none;
+}
+.object-site .qtip-menu.qtip ul li a {
+	display: block;
+	padding: 3px 6px;
+	text-decoration: none;
+	border: 1px solid #fff;
+	color: #222;
+}
+.object-site .qtip-menu.qtip ul li a:hover {
+	background-color: #8FA1CD;
+	border-color: #425994;
+	color: #fff;
+	text-shadow: -1px -1px 0px #999;
+}
+.object-site .qtip-menu.qtip ul li:first-child a {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.object-site .qtip-menu.qtip ul li:last-child a {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.object-site .ui-datepicker {
+	background-color: #FFF;
+}
+
+/** Errors from the custom error handler **/
+.object-site .app-errors {
+}
+.object-site .app-errors.app-errors-ajax {
+	display: none;
+}
+.object-site .app-errors h4 {
+}
+.object-site .app-errors .error-message {
+}
+.object-site .app-errors .backtraces {
+}
+.object-site .app-errors .backtraces .args {
+	display: none;
+}
+
+/** For consolidated pages **/
+.object-site .consolidated-view .consolidated-section {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 10px;
+}
+.object-site .consolidated-view .consolidated-section .nihfo-object-details {
+	padding-bottom: 5px;
+}
+.object-site .consolidated-view .consolidated-section table.actual-table [data-column-key="vulnerability"] {
+	width: 475px;
+}
+.object-site .recommended-actions li {
+	margin-left: 20px;
+	margin-bottom: 1em;
+}
+.object-site .recommended-actions li p {
+	padding-left: 5px;
+}
+.object-site.user-role-crm .proctime_results,
+.object-site.user-role-crm .ajax-times,
+.object-site.user-role-crm .ajax-counts,
+.object-site.user-role-db_user .proctime_results,
+.object-site.user-role-db_user .ajax-times,
+.object-site.user-role-db_user .ajax-counts {
+	display: none;
+}
+
+/* toggle links */
+.object-site a.link-toggle {
+}
+.object-site a.link-toggle.toggle-on {
+	color: #0088CC;
+}
+.object-site a.link-toggle.toggle-off {
+	color: #adadad;
+}
+

@@ -1,0 +1,52 @@
+table.status-bar {
+	border-width: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+table.status-bar td.number {
+	text-align: center;
+	padding: 0;
+	border-width: 0px;
+	border-bottom:2px solid #eaeaea;
+	font-size: 200%;
+}
+table.status-bar td.step-number-completed {
+	border-bottom:2px solid #AAD1EF;
+	color: #637889;
+}
+table.status-bar td.number span {
+	background: #eaeaea;
+	padding: 3px 6px;
+	border-radius: 4px;
+	
+}
+table.status-bar td.step-number-completed span {
+	background: #AAD1EF;
+}
+table.status-bar td.content {
+	font-size: 110%;
+	padding: 10px;
+	background-color: #fafafa;
+	border-width: 0px;
+	border-bottom:2px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+}
+table.status-bar td.content:first-child {
+	border-left: 1px solid #eaeaea;
+}
+
+table.status-bar td.step-content-completed {
+	background: #D7E3ED;
+	border-bottom:2px solid #AAD1EF;
+	border-right: 1px solid #AAD1EF;
+	color: #637889;
+}
+
+table.status-bar td.step-content-completed:first-child {
+	border-left: 1px solid #AAD1EF;
+}
+table.status-bar td.content div.title {
+}
+table.status-bar td.content div.content {
+}

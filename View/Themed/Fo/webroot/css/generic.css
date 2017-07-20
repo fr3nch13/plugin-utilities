@@ -1,0 +1,392 @@
+@charset "utf-8";
+
+@media print
+{    
+    .no-print, .no-print *,
+    .sf-menu, .sf-menu *,
+    #avatar,
+    .debugging-options, .debugging-options *,
+    .proctime_results, .proctime_results *,
+    .form_search, .form_search *,
+    .listings_options, .listings_options *,
+    .listings_table_wrapper_scrollers, .listings_table_wrapper_scrollers *
+    {
+        display: none !important;
+    }
+}
+
+a {
+	color:#294280;
+	text-decoration: none;
+}
+a:hover {
+	color: #222;
+	text-decoration:underline;
+}
+
+a.button {
+	padding: 3px 6px; 
+	margin: 0px 5px;
+}
+a.fa {
+	color: #444;
+}
+
+hr {
+	border: 0 none;
+	color:#FFF;
+	background-color:#AAA;
+	height:1px;
+	margin:10px 0px;
+}
+
+div.clearb {
+	clear: both !important;
+	margin: 0;
+	padding: 0;
+}
+div.clearl {
+	clear: right !important;
+	margin: 0;
+	padding: 0;
+}
+div.clearr {
+	clear: right !important;
+	margin: 0;
+	padding: 0;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+table.details_blocks {
+	margin: 0px auto;
+	border-top: 0px solid #DDD;
+	border-right: 0px solid #DDD;
+	border-left: 0px solid #DDD;
+	width: 95%;
+	
+}
+table.details_blocks tr td {
+	background: #FFF;
+	border-left: 0px solid #f9f9f9;
+	border-bottom: 0px solid #ddd;
+	vertical-align: top;
+}
+table.details_blocks tr:nth-child(even) td {
+	background: #FFF;
+	border-left:0px solid #FFF;
+	border-bottom: 1px solid #aaa;
+}
+
+table tr td.editable div.editable-input {
+	display: none;
+	margin:0;
+	padding:0;
+}
+
+div.required_message {
+	display: none;
+	background-color: #0f0;
+	padding: 5px;
+	margin: 0px 10% 0px 0px;
+	border-radius: 0px 0px 6px 6px;
+}
+
+/** Owner Legend **/
+div.possible_owner {
+	font-size:90%;
+	text-align:right;
+	padding: 10px 10px 0px 0px;
+}
+div.possible_owner span.owner {
+	border: 1px solid #A5D8FF;
+	background-color: #DBEFFF !important;
+	padding: 0px 5px;
+}
+
+/* Buttons and button links */
+input[type=submit],
+.actions ul li a,
+.actions a,
+.button {
+	min-width: 0;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/** Forms **/
+form {
+	clear: both;
+	margin-right: 20px;
+	padding: 0;
+	width: 95%;
+}
+fieldset {
+	border: none;
+	margin-bottom: 1em;
+	padding: 16px 10px;
+}
+fieldset legend {
+	display:none;
+}
+fieldset legend.section {
+	display: block;
+	color: #666;
+	font-size: 160%;
+	font-weight: bold;
+}
+fieldset fieldset {
+	margin-top: 0;
+	padding: 10px 0 0;
+}
+fieldset fieldset legend {
+	font-weight: normal;
+}
+fieldset fieldset div {
+	clear: left;
+	margin: 0 20px;
+}
+form div {
+	clear: both;
+	margin-bottom: 1em;
+	vertical-align: text-top;
+}
+form div.btn-group {
+	clear:none;
+	float: left;
+	margin-bottom: 0;
+	padding: 0.5em;
+}
+form .md-editor > .md-header {
+	min-height: 3.2em;
+	padding: 0px;
+}
+form .md-editor .md-controls {
+	clear:none;
+}
+div.center .md-content-rendered {
+	padding: 5px 20px;
+}
+.md-preview h1, .md-preview h2, .md-preview h3, .md-preview h4, .md-preview p {
+	margin: 0.6em;
+}
+.md-preview ol, .md-preview ul {
+	margin-left: 2.5em;
+	margin-bottom: 0.5em;
+}
+form div.half {
+	display: inline-block;
+	width:47%;
+	padding-right: 0.5em;
+}
+form div.third {
+	display: inline-block;
+	width:31.5%;
+	padding-right: 0.5em;
+}
+form div.forth {
+	display: inline-block;
+	width:24%;
+	padding-right: 0.5em;
+}
+form div.fifth {
+	display: inline-block;
+	width:19%;
+	padding-right: 0.5em;
+}
+form div.small {
+	display: inline-block;
+	width:13%;
+	padding-right: 0.5em;
+}
+form div.twothird {
+	display: inline-block;
+	width:62%;
+	padding-right: 0.5em;
+}
+form div.threeforths {
+	display: inline-block;
+	width:73%;
+	padding-right: 0.5em;
+}
+form div.twofifths {
+	display: inline-block;
+	width:38.5%;
+	padding-right: 0.5em;
+}
+
+@media only screen and (max-width: 360px) {
+	form div.half,
+	form div.third,
+	form div.forth,
+	form div.fifth,
+	form div.small,
+	form div.twothird,
+	form div.threeforths {
+		display: inline-block;
+		width: 95%;
+	}
+}
+
+form div.half fieldset,
+form div.third fieldset,
+form div.forth fieldset,
+form div.fifth fieldset,
+form div.small fieldset,
+form div.twothird fieldset,
+form div.threeforths fieldset {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+form .input {
+	color: #444;
+}
+form .required {
+	font-weight: bold;
+}
+form .required label:after {
+	color: #e32;
+	content: '*';
+	display:inline;
+}
+form label.required span.required {
+	font-size: 80%;
+	color: #e32;
+}
+form div.submit {
+	border: 0;
+	clear: both;
+	margin-top: 10px;
+}
+label {
+	display: block;
+	margin-bottom:3px;
+}
+input, textarea, select {
+	clear: both;
+	width: 97%;
+	box-sizing: border-box;
+	background-color: #FAFAFA;
+	border: 1px solid #BFBFBF;
+	border-radius: 4px;
+	color: #222;
+}
+
+input:focus, textarea:focus, textarea:focus, select:focus {
+box-shadow: 0 0 5px #8AC3F0;
+}
+input[type=text], input[type=email], input[type=password], input[type=number], input[type=search], input[type=tel], textarea, select {
+	display: inline-block;
+	padding: 6px;
+}
+
+textarea {
+	height: 130px;
+}
+textarea.short {
+	height:5em;
+}
+select[multiple=multiple] {
+	height: 130px;
+}
+option {
+	padding: 0 4px;
+}
+input[type=checkbox] {
+	clear: left;
+	float: left;
+	margin: 0px 6px 7px 2px;
+	width: auto;
+}
+/* fix for multiple select jquery plugin */
+.ms-drop input[type="checkbox"] {
+	margin: 0 5px;
+}
+form input.half {
+	width:47%;
+}
+form input.third {
+	width:31%;
+}
+form input.forth {
+	width:23%;
+}
+form input.fifth {
+	width:19%;
+}
+form input.small {
+	width:13%;
+}
+form input.twothird {
+	width:62%;
+}
+form input.threeforths {
+	width:73%;
+}
+div.checkbox label {
+	display: inline;
+}
+input[type=radio] {
+	float:left;
+	width:auto;
+	margin: 6px 0;
+	padding: 0;
+	line-height: 26px;
+}
+.radio label {
+	margin: 0 0 6px 20px;
+	line-height: 26px;
+}
+input[type=submit] {
+	display: inline-block;
+	width: auto;
+}
+form .submit input[type=submit],
+button.submit {
+	background-color:#62af56;
+	border-color: #2d6324;
+	color: #fff;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+form div.submit input[type=submit]:last-child {
+	border-top-right-radius: 4px;
+	border-right: 1px solid #2d6324; 
+}
+form .submit input[type=submit]:hover,
+button.submit:hover {
+	background-color: #5BA150;
+}
+/* Form errors */
+form .error {
+	background: #FFDACC;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: normal;
+}
+form .error-message {
+	-moz-border-radius: none;
+	-webkit-border-radius: none;
+	border-radius: none;
+	border: none;
+	background: none;
+	margin: 0;
+	padding-left: 4px;
+	padding-right: 0;
+}
+form .error,
+form .error-message {
+	color: #9E2424;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+}

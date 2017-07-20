@@ -1,0 +1,155 @@
+.nihfo-object-form {
+}
+
+.nihfo-object-form input:not([type=checkbox]), 
+.nihfo-object-form textarea, 
+.nihfo-object-form select {
+	width: 100%;
+}
+
+.nihfo-object-form input[type=text], 
+.nihfo-object-form input[type=email], 
+.nihfo-object-form input[type=password], 
+.nihfo-object-form input[type=number], 
+.nihfo-object-form input[type=search], 
+.nihfo-object-form input[type=tel], 
+.nihfo-object-form input[type=button], 
+.nihfo-object-form input[type=submit], 
+.nihfo-object-form select:not([multiple])  {
+	height: 2.6em;
+} 
+.nihfo-object-form input + [role="form-tooltip"],
+.nihfo-object-form select + [role="form-tooltip"] {
+	visibility: hidden;
+	margin-bottom: 0;
+}
+.nihfo-object-form input:focus + [role="form-tooltip"],
+.nihfo-object-form select:focus + [role="form-tooltip"] {
+	visibility: visible;
+}
+.nihfo-object-form .chosen-container {
+	font-size: 1em;
+	margin-bottom: 0px;
+}
+.nihfo-object-form .chosen-container-single .chosen-single {
+	height: 2.86em;
+	background: #FAFAFA;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	box-shadow: 0 0 0;
+	border-color: #BFBFBF;
+}
+.nihfo-object-form .chosen-container .chosen-drop {
+	background: #FAFAFA;
+	border-color: #BFBFBF;
+}
+
+.nihfo-object-form input[type=submit],
+.nihfo-object-form input[type=button],
+.nihfo-object-form input[type=checkbox] {
+	display: inline-block;
+	width: auto;
+}
+
+.nihfo-object-form input:disabled,
+.nihfo-object-form select:disabled,
+.nihfo-object-form input.temp-disabled,
+.nihfo-object-form select.temp-disabled {
+	background-color: #EEE;
+}
+
+.nihfo-object-form .clearable-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.nihfo-object-form .clearable-wrapper .clearable-button {
+	position: absolute;
+	top: 4px;
+	right: 9px;
+	font-size: 1.3em;
+	border: 1px solid #bbb;
+	border-radius: 20px;
+	padding: 2px 4px;
+	color: #aaa;
+	background-color: #fff;
+	display: none;
+}
+
+/* list of checkboxes */
+.nihfo-object-form div.checkbox.inline-block {
+	display: inline-block;
+}
+
+/* the date picker. It actually gets appended to the bottom of the page, so it's out of the scope of the form. */
+
+.ui-datepicker.ui-widget {
+	background-color: #FFFFFF;
+	border: 1px solid #BFBFBF;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px #DDD;
+}
+.ui-datepicker .ui-datepicker-prev span {
+	border-right-color: #8AC3F0;
+}
+.ui-datepicker .ui-datepicker-next span {
+	border-left-color: #8AC3F0;
+}
+.ui-datepicker .ui-datepicker-calendar {
+}
+.ui-datepicker .ui-datepicker-calendar th,
+.ui-datepicker .ui-datepicker-calendar td {
+	background-color: #FFF;
+}
+.ui-datepicker .ui-datepicker-calendar td a.ui-state-default {
+	border: 1px solid #DFDFDF;
+}
+.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-week-end  a.ui-state-default {
+	background-color: #EFEFEF;
+}
+.ui-datepicker .ui-datepicker-calendar td a.ui-state-default:hover {
+	color: #FFF;
+	text-shadow: -1px -1px 0 #999;
+	text-decoration: none;
+	border-color: #425994;
+	background-color: #8FA1CD;
+}
+.ui-datepicker .ui-slider-horizontal {
+	background-color: #DFDFDF;
+	border: 1px solid #BFBFBF;
+	border-radius: 4px;
+	height: .8em;
+}
+.ui-datepicker .ui-slider-horizontal .ui-slider-handle {
+	background-color: #FEFEFE;
+	border: 1px solid #BFBFBF;
+	border-radius: 4px;
+}
+
+/* the checkbox toggles */
+.nihfo-object-form input[type=checkbox].input-toggle.has-toggle {
+	display: none;
+}
+.nihfo-object-form div.input-toggle label {
+	display: inline-block;
+}
+.nihfo-object-form div.input-toggle i.input-toggle {
+	display: inline-block;
+	padding: 0 5px 0 5px;
+	color: #888;
+}
+.nihfo-object-form div.input-toggle i.input-toggle.fa-toggle-on {
+	color: #294280;
+}
+
+/* the api key input */
+
+.nihfo-object-form div.input-api_key input[type=text].input-api_key {
+	width: 80%;
+	border-radius: 4px 0px 0px 4px;
+}
+.nihfo-object-form div.input-api_key input[type=submit].input-api_key {
+	border-radius: 0px 4px 4px 0px;
+	border-left-width: 0px;
+	border-right-color: #BFBFBF;
+}
