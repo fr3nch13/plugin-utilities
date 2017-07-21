@@ -2,8 +2,8 @@
 	"name" : "nih-fo/plugin-utilities",
 	"description" : "CakePHP Plugin: General utilities for the portals",
 	"type" : "cakephp-plugin",
-	"keywords" : ["cakephp", "plugin", "legacy", "framework"],
-	"license": "proprietary",
+	"keywords" : ["cakephp", "plugin", "framework"],
+	"license": "mit",
 	"authors": [
 		{
 			"name": "Brian French",
